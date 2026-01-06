@@ -11,7 +11,12 @@ my:
       pojo:
         buzz: pojo_buzz_value
         prop5: pojo_not_named_value
-
+    ### works ok with constructor binding howeever:
+    record-named:
+      boo: boo-value
+    ctor-named:
+      dummy: dummy-value
+      prop2: prop_not_named
     ### test properties with underscored names in hyphen and CamelCase notations:
     underscores:
       propWithUnderscores1: aaa
