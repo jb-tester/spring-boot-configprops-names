@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-boot-configprops-names
+my:
+  props:
+    ### test the @Name annotations for properties:
+    named:
+      foo: foo_value
+      bar: bar_value
+      prop2: should be not resolved!
+      pojo:
+        buzz: pojo_buzz_value
+        prop5: pojo_not_named_value
+
+    ### test properties with underscored names in hyphen and CamelCase notations:
+    underscores:
+      propWithUnderscores1: aaa
+      propWithUnderscoresTwo: bbb
+      list-prop-with-underscores-three:
+        - ccc
+        - ddd
