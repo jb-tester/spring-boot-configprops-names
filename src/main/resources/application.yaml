@@ -1,26 +1,22 @@
 spring:
   application:
-    name: spring-boot-configprops-names
+    name: spring-boot-configprops-names yaml
 my:
   props:
     ### test the @Name annotations for properties:
     named:
-      foo: foo_value
-      bar: bar_value
-      prop2: should be not resolved!
+      foo: foo_value yaml
+      bar: bar_value yaml
+      prop2: should be not resolved! yaml
       pojo:
-        buzz: pojo_buzz_value
-        prop5: pojo_not_named_value
-    ### works ok with constructor binding howeever:
+        buzz: pojo_buzz_value yaml
+        prop5: pojo_not_named_value yaml
+    ### works ok with constructor binding however:
     record-named:
-      boo: boo-value
+      boo: boo-value yaml
     ctor-named:
-      dummy: dummy-value
-      prop2: prop_not_named
-    ### test properties with underscored names in hyphen and CamelCase notations:
-    underscores:
-      propWithUnderscores1: aaa
-      propWithUnderscoresTwo: bbb
-      list-prop-with-underscores-three:
-        - ccc
-        - ddd
+      dummy: dummy-value yaml
+      prop2: prop_not_named yaml
+      pojo:
+        buzz: pojo_buzz_value_ctor yaml
+        prop5: pojo_not_named_value_ctor yaml

@@ -25,6 +25,8 @@ public class SpringBootConfigpropsNamesApplication {
                 System.out.println("----constructor binding:----");
                 System.out.println(propsUsingNameAnnoConstructorBinding.getProp1());
                 System.out.println(propsUsingNameAnnoConstructorBinding.getProp2());
+                System.out.println(propsUsingNameAnnoConstructorBinding.getProp3().getProp4());
+                System.out.println(propsUsingNameAnnoConstructorBinding.getProp3().getProp5());
                 System.out.println(propsRecordUsingNameAnno.prop1());
                 System.out.println("-------------------------------------------------");
             };
