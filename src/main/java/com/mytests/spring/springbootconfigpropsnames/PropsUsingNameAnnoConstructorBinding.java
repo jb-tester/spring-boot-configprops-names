@@ -18,8 +18,8 @@ class PropsUsingNameAnnoConstructorBinding {
     }
     static class InnerPojo {
 
-        private String prop4;
-        private String prop5;
+        private final String prop4;
+        private final String prop5;
 
         public InnerPojo(@Name("buzz") String prop4, String prop5) {
             this.prop4 = prop4;
