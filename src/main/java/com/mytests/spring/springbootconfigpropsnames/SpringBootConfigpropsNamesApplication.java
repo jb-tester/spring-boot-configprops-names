@@ -14,7 +14,7 @@ public class SpringBootConfigpropsNamesApplication {
         SpringApplication.run(SpringBootConfigpropsNamesApplication.class, args);
     }
     @Bean
-        public CommandLineRunner commandLineRunner(PropsUsingNameAnno propsUsingNameAnno, PropsUsingNameAnnoConstructorBinding propsUsingNameAnnoConstructorBinding, PropsRecordUsingNameAnno propsRecordUsingNameAnno) {
+        public CommandLineRunner commandLineRunner(PropsUsingNameAnno propsUsingNameAnno, PropsUsingNameAnnoConstructorBinding propsUsingNameAnnoConstructorBinding, PropsRecordUsingNameAnno propsRecordUsingNameAnno, PropsUsingNestedPojosUsingNameAnno propsUsingNestedPojosUsingNameAnno) {
             return args -> {
                 System.out.println("----@Name-annotated config properties test:------");
                 System.out.println("----annotated fields:------");
@@ -27,7 +27,11 @@ public class SpringBootConfigpropsNamesApplication {
                 System.out.println(propsUsingNameAnnoConstructorBinding.getProp2());
                 System.out.println(propsUsingNameAnnoConstructorBinding.getProp3().getProp4());
                 System.out.println(propsUsingNameAnnoConstructorBinding.getProp3().getProp5());
+                System.out.println("----records binding:----");
                 System.out.println(propsRecordUsingNameAnno.prop1());
+                System.out.println("----nested pojos:----");
+                System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoOne().getPojoTwo().getProp());
+                System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoOne().getPojoTwo().isBool());
                 System.out.println("-------------------------------------------------");
             };
         }
