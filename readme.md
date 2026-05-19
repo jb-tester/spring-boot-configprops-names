@@ -6,3 +6,10 @@ The navigation from yaml to the config class property doesn't work for `@Name`-e
    - https://youtrack.jetbrains.com/issue/IDEA-338337
    - https://youtrack.jetbrains.com/issue/IDEA-386415/Spring-Boot-support-Name
    - https://youtrack.jetbrains.com/issue/IDEA-386778/Spring-Boot-Support-refactor-rename-feature-of-the-Name-annotated-configuration-properties
+
+^^^^^^^
+fixed generally
+
+Problem:
+
+ - Map<POJO> with `@Name`-annotated POJO properties: name is ignored - https://youtrack.jetbrains.com/issue/IDEA-384106/Harmonize-configuration-properties-support-to-all-target-objects#focus=Comments-27-13790262.0-0
