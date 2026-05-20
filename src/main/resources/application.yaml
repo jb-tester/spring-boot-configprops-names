@@ -14,6 +14,7 @@ my:
     ### works ok with constructor binding however:
     record-named:
       boo: boo-value yaml
+      booo: booo-value yaml
     ctor-named:
       dummy: dummy-value yaml
       prop2: prop_not_named yaml
