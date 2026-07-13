@@ -12,4 +12,4 @@ fixed generally
 
 Problem:
 
- - Map<POJO> with `@Name`-annotated POJO properties: name is ignored - https://youtrack.jetbrains.com/issue/IDEA-384106/Harmonize-configuration-properties-support-to-all-target-objects#focus=Comments-27-13790262.0-0
+ - Map<POJO> with `@Name`-annotated POJO properties: name is ignored - https://youtrack.jetbrains.com/issue/IDEA-384106/Harmonize-configuration-properties-support-to-all-target-objects#focus=Comments-27-13790262.0-0 - fixed

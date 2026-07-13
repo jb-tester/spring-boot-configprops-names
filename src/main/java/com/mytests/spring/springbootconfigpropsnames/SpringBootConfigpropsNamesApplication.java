@@ -32,6 +32,9 @@ public class SpringBootConfigpropsNamesApplication {
                 System.out.println("----nested pojos:----");
                 System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoOne().getPojoTwo().getProp());
                 System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoOne().getPojoTwo().isBool());
+                System.out.println("----maps of pojos:----");
+                System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoMap().get("key1").isBool());
+                System.out.println(propsUsingNestedPojosUsingNameAnno.getPojoMap().get("key1").getProp());
                 System.out.println("-------------------------------------------------");
             };
         }
