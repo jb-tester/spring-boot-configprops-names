@@ -12,10 +12,10 @@ import java.util.Map;
 @ConfigurationProperties("my.props.nested-named")
 public class PropsUsingNestedPojosUsingNameAnno {
 
- @NestedConfigurationProperty
-  ExternalPojoOne pojoOne;
+    Map<String, ExternalPojoThree> pojoMap;
 
- Map<String, ExternalPojoThree> pojoMap;
+    @NestedConfigurationProperty
+    ExternalPojoOne pojoOne;
 
   public ExternalPojoOne getPojoOne() {
     return pojoOne;
